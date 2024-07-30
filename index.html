@@ -16,24 +16,37 @@
       #head4 {
         margin-top: 0%;
       }
+
+      .div-article {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: inline-block;
+      }
+
+      table {
+        width: 30%;
+      }
+
+      tr {
+        text-align: center;
+      }
     </style>
   </head>
-
-  <header>
-    <figure>
-      <img src="/logo.svg" alt="Logo" />
-      <figcaption>Epicode - Il blog dei developers</figcaption>
-    </figure>
-    <div>
-      <nav class="menu">
-        <a href="#">Menù</a>
-        <a href="#">Articoli</a>
-        <a href="#">Lavora con noi</a>
-      </nav>
-    </div>
-  </header>
-
   <body>
+    <header>
+      <figure>
+        <img src="/logo.svg" alt="Logo" />
+        <figcaption>Epicode - Il blog dei developers</figcaption>
+      </figure>
+      <div>
+        <nav class="menu">
+          <a href="#">Menù</a>
+          <a href="#">Articoli</a>
+          <a href="#">Lavora con noi</a>
+        </nav>
+      </div>
+    </header>
+
     <main>
       <h1 id="head1">Come creare un template per i post</h1>
       <h4 id="head4">di Mario Rossi - pubblicato il 25-10-2020</h4>
@@ -95,7 +108,16 @@
         Un test di validazione potrà essere fatto tramit il tool online -LINK ESTERNO- dedicato allo scopo. Una volta ottimizzato il tutto, avremmo raggiunto il
         nostro obiettivo ed essere stati dei veri developers come loro:
       </p>
-      <a id="table-a" href="#">- INSERIRE YOUTUBE VIDEO -</a>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/UvF0Zt4_NGU?si=6-AXN7PwVWraxU9T"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
       <br />
       <p></p>
       <form action="submit form" method="get">
@@ -112,36 +134,37 @@
       </form>
       <div>
         <p>Articoli Correlati</p>
-        <p>
+        <div class="div-article">
           <a href="#">
             <div class="article">Validare il codice HTML</div>
             <div class="article">Categoria: develop</div>
             <div class="article">Data: 18-9-2020</div>
           </a>
-        </p>
-        <p>
+        </div>
+        <div class="div-article">
           <a href="#">
             <div class="article">Correggere la sintassi</div>
             <div class="article">Categoria: dvelop</div>
             <div class="article">Data: 16-9-2020</div>
           </a>
-        </p>
-        <p>
+        </div>
+        <div class="div-article">
           <a href="#">
             <div class="article">Meno Kb nella pagina</div>
             <div class="article">Categoria: ottimizzazione</div>
             <div class="article">Data: 30-9-2020</div>
           </a>
-        </p>
+        </div>
       </div>
     </main>
+
+    <footer>
+      <p>Blog Epicode &reg;2023</p>
+      <p>Testata online di Mario Rpssi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.</p>
+      <caption>
+        info@epicode.school
+        <a href="#">-LINK EMAIL-</a>
+      </caption>
+    </footer>
   </body>
-  <footer>
-    <p>Blog Epicode &reg;2023</p>
-    <p>Testata online di Mario Rpssi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.</p>
-    <caption>
-      info@epicode.school
-      <a href="#">-LINK EMAIL-</a>
-    </caption>
-  </footer>
 </html>
